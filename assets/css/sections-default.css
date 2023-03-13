@@ -1,0 +1,19 @@
+.sections-default .container .header{
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2rem 5rem;
+}
+.sections-default .container h2{
+    margin: 0 0 .5rem;
+    position: relative;
+}
+.sections-default .container h2::after{
+    content: '';
+    width: 90px;
+    height: 2px;
+    background: var(--color-primary);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
