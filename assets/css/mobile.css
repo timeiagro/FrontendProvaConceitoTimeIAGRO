@@ -1,0 +1,83 @@
+@media (max-width: 1023px){
+    body, #headerPerfil .header, body > section:nth-of-type(even) div.container div.content{
+        background: var(--bg-color-section-content);
+    }
+    .photo-perfil{
+        width: 180px;
+        height: 180px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    #headerPerfil{
+        background: var(--color-white);
+        margin-bottom: 16px;
+    }    
+    #headerPerfil .content {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #headerPerfil .content h1 {
+        align-self: center;
+    }
+    #headerPerfil .perfil-description{
+        margin-top: 16px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #headerPerfil .perfil-description ul{
+        margin-top: 32px;
+        justify-self: center;
+        padding: 0;
+    }
+    .bg-right{
+        display: none;
+    }
+    div.container{
+        grid-template-columns: 1fr;
+    }
+    .sections-default .container .header{
+        align-items: flex-start;       
+    }
+    .sections-default .container .header, section div.container div.content{
+        padding: 1.5rem 3.5rem;
+    }
+    section:nth-of-type(even) div.container div.content {
+        background: var(--color-white);
+    }
+}
+
+@media(max-width: 760px){    
+    #headerPerfil .content h1 {
+        font-size: 2.8rem;
+    }
+    #headerPerfil .perfil-infos{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #headerPerfil .perfil-description{
+        font-size: 1.2rem;
+    }
+    .experiences{
+        grid-template-columns: 1fr;
+        padding-left: 32px;
+    }
+    .experiences::before{
+        left: 2px;
+     }
+     .experiences::after{
+         left: 6px;
+      }
+    .experiences .experiences-description{
+        margin-top: 16px;
+    }
+    #headerPerfil .content, .sections-default .container .header, section div.container div.content{
+        padding: 1.5rem;
+    }
+}
+
+@media(max-width: 400px){
+    #headerPerfil .content h1 {
+        font-size: 2.1rem;
+    }
+}

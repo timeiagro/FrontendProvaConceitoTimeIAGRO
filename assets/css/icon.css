@@ -1,0 +1,27 @@
+.icon{
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;    
+    background: var(--color-gray300);
+    border-color: var(--color-gray300);
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;    
+    display: flex;
+}
+.icon a {
+    margin: auto;
+    color: var(--color-gray500);
+    display: flex;
+}
+.icon img{
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+.icon:hover{
+   background: var(--color-white);
+}
+.icon:hover img{
+    filter: invert(66%) sepia(81%) saturate(938%) hue-rotate(329deg) brightness(101%) contrast(101%);
+}
